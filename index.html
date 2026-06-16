@@ -204,6 +204,10 @@
         </a>
         
         <nav class="nav-menu" id="navMenu">
+          <div class="branch-selector mobile-branch-selector btn-mobile-only">
+            <button class="branch-btn active" data-branch="bekasi">Bekasi</button>
+            <button class="branch-btn" data-branch="gading">Kelapa Gading</button>
+          </div>
           <a href="#layanan" class="nav-link">Grooming & Vet</a>
           <a href="#hotel" class="nav-link">Pet Hotel</a>
           <a href="#toko" class="nav-link">Store</a>
@@ -214,6 +218,10 @@
         </nav>
         
         <div class="nav-actions">
+          <div class="branch-selector btn-desktop-only">
+            <button class="branch-btn active" data-branch="bekasi">Bekasi</button>
+            <button class="branch-btn" data-branch="gading">Kelapa Gading</button>
+          </div>
           <a href="https://wa.me/6281388881316?text=Halo%20PetLoft%2C%20saya%20ingin%20booking%20grooming%2Fperawatan" target="_blank" class="btn btn-navbar btn-desktop-only">
             <svg viewBox="0 0 24 24" class="brand-icon-svg" style="fill: currentColor; margin-right: 6px; width: 16px; height: 16px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.008c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Booking WA
           </a>
@@ -231,7 +239,7 @@
           <div class="hero-content">
             <span class="badge"><i data-lucide="crown" class="badge-icon"></i> Premium PetLoft Store, Grooming & Vet</span>
             <h1 class="hero-title">Perawatan Kelas Satu untuk Anggota Keluarga Berbulu Anda</h1>
-            <p class="hero-description">
+            <p class="hero-description" id="hero-desc-text">
               Dari PetLoft Grooming profesional hingga penginapan anjing & kucing yang nyaman ber-AC, serta layanan VetLoft Clinic terpercaya di kawasan elite Ruko Burgundy Summarecon Bekasi.
             </p>
             <div class="hero-buttons">
@@ -976,7 +984,7 @@
         <div class="container kontak-container">
           <div class="kontak-info">
             <span class="subtitle">Kontak & Lokasi</span>
-            <h2 class="section-title">Kunjungi Workshop Kami di Summarecon</h2>
+            <h2 class="section-title" id="contact-section-title">Kunjungi Workshop Kami di Summarecon</h2>
             <p class="section-description">
               Jangan ragu untuk berkunjung langsung atau berkonsultasi mengenai kebutuhan grooming & kesehatan hewan kesayangan Anda.
             </p>
@@ -986,7 +994,7 @@
                 <span class="info-icon"><i data-lucide="map-pin"></i></span>
                 <div class="info-details">
                   <strong>Alamat Workshop</strong>
-                  <p>Ruko Burgundy Blok RAL 25, Summarecon Bekasi, Harapan Baru, Kec. Bekasi Utara, Kota Bekasi, Jawa Barat 17123</p>
+                  <p id="contact-address-text">Ruko Burgundy Blok RAL 25, Summarecon Bekasi, Harapan Baru, Kec. Bekasi Utara, Kota Bekasi, Jawa Barat 17123</p>
                 </div>
               </div>
               
@@ -1002,7 +1010,7 @@
                 <span class="info-icon"><i data-lucide="phone"></i></span>
                 <div class="info-details">
                   <strong>Telepon / WhatsApp</strong>
-                  <p>+62 813-8888-1316</p>
+                  <p id="contact-phone-text">+62 813-8888-1316</p>
                 </div>
               </div>
             </div>
@@ -1022,7 +1030,7 @@
           
           <div class="kontak-maps">
             <div class="maps-wrapper">
-              <iframe src="https://maps.google.com/maps?q=-6.2215854060046265,107.01373963996512&z=17&output=embed" width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe id="contact-map-iframe" src="https://maps.google.com/maps?q=-6.2215854060046265,107.01373963996512&z=17&output=embed" width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
@@ -1105,6 +1113,20 @@
             <i data-lucide="external-link" class="hub-external-icon"></i>
           </a>
 
+          <!-- Tokopedia -->
+          <a href="https://www.tokopedia.com/petloftpetshopcare" target="_blank" rel="noopener" class="hub-card hub-tokopedia" id="hub-tokopedia">
+            <div class="hub-card-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12z"/>
+              </svg>
+            </div>
+            <div class="hub-card-info">
+              <strong>Tokopedia</strong>
+              <span>Belanja Online</span>
+            </div>
+            <i data-lucide="external-link" class="hub-external-icon"></i>
+          </a>
+
           <!-- Google Maps -->
           <a href="https://maps.google.com/maps?q=-6.2215854060046265,107.01373963996512" target="_blank" rel="noopener" class="hub-card hub-maps" id="hub-maps">
             <div class="hub-card-icon">
@@ -1128,7 +1150,7 @@
             <img src="/src/assets/logo_ig.webp" alt="PetLoft Logo" class="logo-img" />
             <span class="logo-text">PET<span class="logo-highlight">LOFT</span></span>
           </a>
-          <p class="footer-desc">
+          <p class="footer-desc" id="footer-desc-text">
             Penyedia jasa perawatan hewan peliharaan premium terpercaya di Bekasi Utara. Kami mengutamakan kenyamanan, kebersihan, dan keselamatan hewan kesayangan Anda.
           </p>
           <div class="footer-socials">
@@ -1165,7 +1187,7 @@
       
       <div class="footer-bottom">
         <div class="container footer-bottom-container">
-          <p class="copyright">&copy; 2026 PetLoft Summarecon Bekasi. All Rights Reserved.</p>
+          <p class="copyright" id="footer-copyright-text">&copy; 2026 PetLoft Summarecon Bekasi. All Rights Reserved.</p>
           <p class="developer">Design by Darell Rangga</p>
         </div>
       </div>

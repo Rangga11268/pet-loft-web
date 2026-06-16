@@ -1645,7 +1645,7 @@ ul {
 /* Hub Cards Grid */
 .social-hub-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 16px;
 }
 
@@ -1686,6 +1686,9 @@ ul {
 
 /* Shopee */
 .hub-shopee:hover { background: linear-gradient(135deg, #EE4D2D, #ff7337); border-color: transparent; }
+
+/* Tokopedia */
+.hub-tokopedia:hover { background: linear-gradient(135deg, #03ac0e, #42b549); border-color: transparent; }
 
 /* Google Maps */
 .hub-maps:hover { background: linear-gradient(135deg, #4285F4, #1a73e8); border-color: transparent; }
@@ -2175,3 +2178,59 @@ ul {
     padding: 16px;
   }
 }
+
+/* Branch Selector Styles */
+.branch-selector {
+  display: inline-flex;
+  background: rgba(15, 23, 42, 0.05);
+  border-radius: 30px;
+  padding: 4px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.branch-btn {
+  background: none;
+  border: none;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.branch-btn.active {
+  background: var(--color-primary);
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(11, 67, 133, 0.15);
+}
+
+.branch-btn:hover:not(.active) {
+  color: var(--color-primary);
+}
+
+.mobile-branch-selector {
+  width: 100%;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.mobile-branch-selector .branch-btn {
+  flex: 1;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 10px 16px;
+}
+
+@media (max-width: 1024px) {
+  .social-hub-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
