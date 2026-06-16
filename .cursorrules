@@ -1,0 +1,51 @@
+# Rules & Guidelines for Pet Loft Web Project
+
+You are developing the website for **Pet Loft Summarecon Bekasi** located at Ruko Burgundy. Follow these rules strictly to maintain high quality, brand consistency, and professional output.
+
+## 1. Tech Stack Constraints
+*   **HTML:** Use semantic HTML5 elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`). Ensure it has proper SEO meta tags (title, description, open graph tags).
+*   **CSS:** Use **Vanilla CSS** with CSS Variables (Custom Properties) defined in `:root`. DO NOT use Tailwind CSS or any utility-first frameworks. Use Flexbox and CSS Grid for layouts.
+*   **JavaScript:** Use vanilla modern JS (ES6+) for DOM manipulation, booking logic, and interactions. No heavy frameworks (React/Vue/etc.) or jquery.
+*   **Icons & Assets:** DO NOT use OS-default icons (such as system emojis or native OS symbols). Use custom SVG icons or import a clean web-icon library (e.g., Lucide Icons or FontAwesome via ESM/CDN).
+*   **Responsiveness:** Every single page and component must be pixel-perfect and responsive across all device sizes (Mobile, Tablet, Desktop). Always design with a Mobile-First approach and test breakpoints.
+
+## 2. Design System & Brand Guidelines
+The website must reflect a premium, clean, warm, and professional aesthetic matching the Summarecon Burgundy vibe.
+
+### Color Palette (CSS Variables)
+Define these variables in your main CSS file:
+```css
+:root {
+  --color-primary: #D97736;       /* Warm Terracotta - Energy, playfulness */
+  --color-secondary: #4A8F82;     /* Soft Sage Green - Clinic, hygiene, health */
+  --color-accent: #F4C45E;        /* Sunny Yellow - Call to Action, highlights */
+  --color-bg: #FAF6F0;            /* Warm Cream - Background canvas (comforting) */
+  --color-bg-card: #FFFFFF;       /* Pure White - For cards and containers */
+  --color-text: #1A2328;          /* Deep Slate - Main text color (high readability) */
+  --color-text-muted: #5C676D;    /* Muted Slate - Subtitles, descriptions */
+  --border-radius-lg: 16px;
+  --border-radius-md: 8px;
+  --transition-smooth: all 0.3s ease;
+}
+```
+
+### Typography & Spacing
+*   **Fonts:** Use 'Outfit' or 'Fredoka' for Headings, and 'Inter' or 'Plus Jakarta Sans' for body text (import via Google Fonts).
+*   **Borders:** Use smooth rounded corners (`border-radius: var(--border-radius-lg)`) on all primary cards, buttons, and sections.
+*   **Spacing:** Use a consistent spacing system (multiple of 8px: 8px, 16px, 24px, 32px, 48px, 64px) for margins and paddings.
+
+## 3. SEO & Accessibility (A11y)
+*   **Page Title:** `Pet Loft Summarecon Bekasi - Grooming, Pet Hotel & Klinik Hewan`
+*   **Meta Description:** `Layanan perawatan hewan premium di Bekasi Utara. Menyediakan jasa pet grooming profesional, penitipan hewan (pet hotel) ber-AC, dan klinik hewan terpercaya.`
+*   **Heading Structure:** Exactly one `<h1>` tag on the landing page. Use sequential `<h2>`, `<h3>` tags.
+*   **Alt Tags:** Every `<img>` element must have a descriptive `alt` attribute.
+*   **Schema.org:** Include a `application/ld+json` script for `LocalBusiness` specifying Pet Loft Summarecon Bekasi (address, geo-coordinates, phone, opening hours).
+
+## 4. Key Sections & Interactive Features
+1.  **Header:** Sticky/Fixed navbar with smooth scroll links and a CTA button.
+2.  **Hero:** Premium picture, tagline, and instant WhatsApp booking button.
+3.  **Grooming & Clinic Price Catalog:** An interactive pricing list with tab-switching between 'Grooming' and 'Klinik'.
+4.  **Pet Hotel Showcase:** Image gallery showing pet hotel facilities (AC, play area, daily feed) with a reservation form.
+5.  **Shop Highlights:** A clean grid showing best-selling food and accessories with a CTA leading to Shopee.
+6.  **Testimonials:** An elegant slider/carousel showing real Google Maps reviews from pet owners.
+7.  **Footer:** Clear opening hours, address, maps embed, and social links.
