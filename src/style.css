@@ -1565,6 +1565,204 @@ ul {
   color: var(--color-secondary-hover);
 }
 
+/* ===== Social Hub / Linktree Section ===== */
+.social-hub {
+  padding: 80px 0;
+  background-color: var(--color-bg-card);
+  border-top: 1px solid var(--color-border);
+}
+
+/* Linktree main CTA button */
+.linktree-hero {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.linktree-btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  color: #0d3321;
+  padding: 18px 32px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  box-shadow: 0 8px 24px rgba(67, 233, 123, 0.3);
+  transition: var(--transition-smooth);
+  max-width: 420px;
+  width: 100%;
+  text-decoration: none;
+}
+
+.linktree-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(67, 233, 123, 0.4);
+  color: #0d3321;
+}
+
+.linktree-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255,255,255,0.35);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.linktree-label {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.linktree-label strong {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.linktree-label small {
+  font-size: 0.8rem;
+  opacity: 0.75;
+  font-weight: 400;
+}
+
+.linktree-arrow {
+  display: flex;
+  align-items: center;
+  opacity: 0.7;
+}
+
+.linktree-arrow svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Hub Cards Grid */
+.social-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.hub-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 20px;
+  background: var(--color-bg);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  text-decoration: none;
+  color: var(--color-text);
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.hub-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: var(--transition-smooth);
+}
+
+.hub-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  color: #ffffff;
+}
+
+/* Instagram */
+.hub-instagram:hover { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); border-color: transparent; }
+
+/* WhatsApp */
+.hub-whatsapp:hover { background: linear-gradient(135deg, #25d366, #128C7E); border-color: transparent; }
+
+/* Shopee */
+.hub-shopee:hover { background: linear-gradient(135deg, #EE4D2D, #ff7337); border-color: transparent; }
+
+/* Google Maps */
+.hub-maps:hover { background: linear-gradient(135deg, #4285F4, #1a73e8); border-color: transparent; }
+
+.hub-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: var(--color-bg-card);
+  flex-shrink: 0;
+  transition: var(--transition-smooth);
+}
+
+.hub-card:hover .hub-card-icon {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.hub-card-icon svg,
+.hub-card-icon i {
+  color: var(--color-primary);
+  transition: var(--transition-smooth);
+}
+
+.hub-card:hover .hub-card-icon svg,
+.hub-card:hover .hub-card-icon i {
+  color: #ffffff;
+}
+
+.hub-card-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.hub-card-info strong {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text);
+  transition: var(--transition-smooth);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hub-card:hover .hub-card-info strong {
+  color: #ffffff;
+}
+
+.hub-card-info span {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  transition: var(--transition-smooth);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hub-card:hover .hub-card-info span {
+  color: rgba(255,255,255,0.8);
+}
+
+.hub-external-icon {
+  width: 16px;
+  height: 16px;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+  transition: var(--transition-smooth);
+}
+
+.hub-card:hover .hub-external-icon {
+  color: rgba(255,255,255,0.7);
+}
+
 /* Hero & Hotel Real Image styles */
 .hero-img-real {
   width: 100%;
@@ -1912,6 +2110,16 @@ ul {
     width: 100%;
     max-width: 360px;
   }
+
+  /* Social Hub */
+  .social-hub-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .linktree-btn {
+    max-width: 100%;
+    padding: 16px 24px;
+  }
 }
 
 /* Extra Small (480px and below) */
@@ -1957,5 +2165,13 @@ ul {
   .footer-bottom-container {
     flex-direction: column;
     text-align: center;
+  }
+
+  .social-hub-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hub-card {
+    padding: 16px;
   }
 }
