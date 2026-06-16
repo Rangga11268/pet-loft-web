@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Block access to source files that should not be indexed
+Disallow: /src/
+
+# Sitemap location
+Sitemap: https://pet-loft-web.vercel.app/sitemap.xml
