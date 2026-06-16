@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# ChromeDriver (WebDriver for testing, not needed in production)
+chromedriver/
+
+# Python scratch scripts
+scratch_*.py

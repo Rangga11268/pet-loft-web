@@ -1,13 +1,961 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pet-loft-web</title>
+    <title>PetLoft Summarecon Bekasi - Grooming, Pet Hotel & VetLoft Clinic</title>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="Layanan perawatan hewan premium di Bekasi Utara. Menyediakan jasa pet grooming profesional, penitipan hewan (pet hotel) ber-AC, dan VetLoft Clinic terpercaya di Ruko Burgundy Summarecon." />
+    <meta name="keywords" content="petshop bekasi, grooming kucing bekasi, pet hotel bekasi, klinik hewan bekasi, petloft bekasi, summarecon bekasi" />
+    <meta name="author" content="PetLoft Bekasi" />
+    
+    <!-- Open Graph (Facebook / WA / Link Sharing) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="PetLoft Summarecon Bekasi - Grooming, Pet Hotel & VetLoft Clinic" />
+    <meta property="og:description" content="Perawatan kelas satu untuk hewan kesayangan Anda di Ruko Burgundy Summarecon Bekasi. Hubungi kami untuk booking!" />
+    <meta property="og:image" content="/favicon.webp" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="/favicon.webp" />
+    
+    <!-- Google Fonts: Calistoga (Heading) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./src/style.css" />
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Schema.org JSON-LD LocalBusiness -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "PetLoft Summarecon Bekasi",
+        "image": "https://id.shp.ee/xCLsRjJ",
+        "telephon": "+62813-8888-1316",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Ruko Burgundy Blok RAL 25, Summarecon Bekasi",
+          "addressLocality": "Bekasi Utara",
+          "addressRegion": "Jawa Barat",
+          "postalCode": "17123",
+          "addressCountry": "ID"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -6.2241,
+          "longitude": 107.0019
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      }
+    </script>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <!-- Header / Navigasi -->
+    <header class="navbar">
+      <div class="container navbar-container">
+        <a href="#" class="logo">
+          <img src="/src/assets/logo_ig.webp" alt="PetLoft Logo" class="logo-img" />
+          <span class="logo-text">PET<span class="logo-highlight">LOFT</span></span>
+        </a>
+        
+        <nav class="nav-menu" id="navMenu">
+          <a href="#layanan" class="nav-link">Grooming & Vet</a>
+          <a href="#hotel" class="nav-link">Pet Hotel</a>
+          <a href="#toko" class="nav-link">Store</a>
+          <a href="#instagram-gallery" class="nav-link">Galeri</a>
+          <a href="#testimoni" class="nav-link">Testimoni</a>
+          <a href="#kontak" class="nav-link">Kontak</a>
+          <a href="https://wa.me/6281388881316?text=Halo%20PetLoft%2C%20saya%20ingin%20booking%20grooming%2Fperawatan" target="_blank" class="btn btn-navbar btn-mobile-only"><svg viewBox="0 0 24 24" class="brand-icon-svg" style="fill: currentColor; margin-right: 6px; width: 16px; height: 16px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.008c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Booking WA</a>
+        </nav>
+        
+        <div class="nav-actions">
+          <a href="https://wa.me/6281388881316?text=Halo%20PetLoft%2C%20saya%20ingin%20booking%20grooming%2Fperawatan" target="_blank" class="btn btn-navbar btn-desktop-only">
+            <svg viewBox="0 0 24 24" class="brand-icon-svg" style="fill: currentColor; margin-right: 6px; width: 16px; height: 16px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.008c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Booking WA
+          </a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+            <i data-lucide="menu" id="menuIcon"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <span class="badge"><i data-lucide="crown" class="badge-icon"></i> Premium PetLoft Store, Grooming & Vet</span>
+            <h1 class="hero-title">Perawatan Kelas Satu untuk Anggota Keluarga Berbulu Anda</h1>
+            <p class="hero-description">
+              Dari PetLoft Grooming profesional hingga penginapan anjing & kucing yang nyaman ber-AC, serta layanan VetLoft Clinic terpercaya di kawasan elite Ruko Burgundy Summarecon Bekasi.
+            </p>
+            <div class="hero-buttons">
+              <a href="https://wa.me/6281388881316?text=Halo%20PetLoft%2C%20saya%20ingin%20konsultasi%20mengenai%20grooming%2Fhotel" target="_blank" class="btn btn-primary btn-lg">
+                <svg viewBox="0 0 24 24" class="brand-icon-svg" style="fill: currentColor; margin-right: 8px; width: 20px; height: 20px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.008c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Konsultasi Chat WA
+              </a>
+              <a href="#layanan" class="btn btn-secondary btn-lg">Lihat Layanan & Harga</a>
+            </div>
+            
+            <div class="hero-features">
+              <div class="hero-feature-item">
+                <span class="feature-icon"><i data-lucide="shield-check"></i></span>
+                <span class="feature-text">Groomer & Dokter Berlisensi</span>
+              </div>
+              <div class="hero-feature-item">
+                <span class="feature-icon"><i data-lucide="thermometer-snowflake"></i></span>
+                <span class="feature-text">Kamar Hotel Full AC</span>
+              </div>
+              <div class="hero-feature-item">
+                <span class="feature-icon"><i data-lucide="check-circle-2"></i></span>
+                <span class="feature-text">Bintang 4.9 Ulasan Google</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="hero-visual">
+            <div class="image-wrapper">
+              <!-- Real Hero Image with fallback to SVG illustration -->
+              <img src="/src/assets/hero_ig.webp" alt="PetLoft Grooming & Clinic" class="hero-img-real" onerror="this.style.display='none'; document.getElementById('hero-svg-fallback').style.display='block';" />
+              <div class="pet-illustrations" id="hero-svg-fallback" style="display: none;">
+                <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+                  <!-- Background Circle -->
+                  <circle cx="200" cy="200" r="180" fill="var(--color-primary)" fill-opacity="0.1" />
+                  <circle cx="200" cy="200" r="140" fill="var(--color-secondary)" fill-opacity="0.15" />
+                  
+                  <!-- Cat & Dog Stylized illustration -->
+                  <!-- Dog Head -->
+                  <path d="M130 140C130 110 170 110 170 140C170 160 130 160 130 140Z" fill="var(--color-primary)" />
+                  <path d="M120 170C120 230 180 230 180 170C180 130 120 130 120 170Z" fill="var(--color-primary)" />
+                  <!-- Dog Ears -->
+                  <path d="M110 150C100 150 95 180 105 190C115 200 120 170 110 150Z" fill="var(--color-text)" />
+                  <path d="M190 150C200 150 205 180 195 190C185 200 180 170 190 150Z" fill="var(--color-text)" />
+                  
+                  <!-- Cat Head -->
+                  <path d="M260 210C220 210 220 270 260 270C300 270 300 210 260 210Z" fill="var(--color-secondary)" />
+                  <!-- Cat Ears -->
+                  <path d="M230 220L220 180L250 210H230Z" fill="var(--color-secondary)" />
+                  <path d="M290 220L300 180L270 210H290Z" fill="var(--color-secondary)" />
+                  
+                  <!-- Eyes & Nose details -->
+                  <circle cx="140" cy="170" r="5" fill="var(--color-bg)" />
+                  <circle cx="160" cy="170" r="5" fill="var(--color-bg)" />
+                  <polygon points="148,180 152,180 150,183" fill="var(--color-text)" />
+                  
+                  <circle cx="245" cy="240" r="4" fill="var(--color-bg)" />
+                  <circle cx="265" cy="240" r="4" fill="var(--color-bg)" />
+                  <polygon points="253,248 257,248 255,250" fill="var(--color-text)" />
+                </svg>
+              </div>
+              <div class="floating-badge badge-top">
+                <span class="floating-icon"><i data-lucide="cat"></i></span>
+                <div class="floating-info">
+                  <strong>Cat Grooming</strong>
+                  <span>Kucing wangi & bersih</span>
+                </div>
+              </div>
+              <div class="floating-badge badge-bottom">
+                <span class="floating-icon icon-secondary"><i data-lucide="dog"></i></span>
+                <div class="floating-info">
+                  <strong>Dog Care</strong>
+                  <span>Sehat & terawat</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Stats / Trust Bar -->
+      <section class="trust-bar">
+        <div class="container">
+          <div class="trust-grid">
+            <div class="trust-item">
+              <span class="trust-number">500<span class="trust-plus">+</span></span>
+              <span class="trust-label">Pelanggan Setia</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+              <span class="trust-number">4.9<span class="trust-star">★</span></span>
+              <span class="trust-label">Rating Google Maps</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+              <span class="trust-number">3<span class="trust-plus">+</span></span>
+              <span class="trust-label">Tahun Beroperasi</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+              <span class="trust-number">24/7</span>
+              <span class="trust-label">CCTV & Pengawasan</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Layanan & Tarif -->
+      <section class="layanan" id="layanan">
+        <div class="container">
+          <div class="section-header">
+            <span class="subtitle">Tarif & Jasa Kami</span>
+            <h2 class="section-title">Layanan Perawatan Profesional</h2>
+            <p class="section-description">
+              Pilih dari paket grooming higienis kami atau konsultasikan masalah kesehatan hewan peliharaan Anda langsung ke tim dokter hewan kami.
+            </p>
+          </div>
+          
+          <!-- Tab Menu -->
+          <div class="tabs-container">
+            <div class="tabs">
+              <button class="tab-btn active" data-tab="grooming">
+                <i data-lucide="scissors" class="tab-icon"></i> PetLoft Grooming
+              </button>
+              <button class="tab-btn" data-tab="klinik">
+                <i data-lucide="stethoscope" class="tab-icon"></i> VetLoft Clinic
+              </button>
+            </div>
+          </div>
+          
+          <!-- Tab Content: Grooming -->
+          <div class="tab-content active" id="grooming-content">
+            <div class="price-grid">
+              <!-- Card 1 -->
+              <div class="price-card">
+                <div class="card-header">
+                  <span class="package-name">Basic Grooming</span>
+                  <div class="price-wrapper">
+                    <span class="currency">Rp</span>
+                    <span class="price-amount">60k</span>
+                    <span class="price-period">/sesi</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="package-desc">Perawatan higienis dasar agar hewan peliharaan tetap segar, bersih, dan bebas kuman.</p>
+                  <ul class="package-features">
+                    <li><i data-lucide="check" class="check-icon"></i> Mandi shampoo wangi khusus</li>
+                    <li><i data-lucide="check" class="check-icon"></i> Potong cakar & kuku</li>
+                    <li><i data-lucide="check" class="check-icon"></i> Pembersihan telinga</li>
+                    <li><i data-lucide="check" class="check-icon"></i> Pengeringan bulu & sisir</li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <a href="https://wa.me/6281388881316?text=Halo%20PetLoft%2C%20saya%20ingin%20pesan%20paket%20Basic%20Grooming" target="_blank" class="btn btn-outline">Booking Sekarang</a>
+                </div>
+              </div>
+              
+              <!-- Card 2 (Popular) -->
+              <div class="price-card popular">
+                <div class="popular-badge"><i data-lucide="award" class="badge-icon"></i> Terlaris</div>
+                <div class="card-header">
+                  <span class="package-name">Grooming Sehat (Anti Kutu & Jamur)</span>
+                  <div class="price-wrapper">
+                    <span class="currency">Rp</span>
+                    <span class="price-amount">85k</span>
+                    <span class="price-period">/sesi</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="package-desc">Menggunakan shampoo obat dan treatment antiparasit untuk mengatasi gatal, jamur, serta kutu bulu.</p>
+                  <ul class="package-features">
+                    <li><i data-lucide="check" class="check-icon"></i> Semua fitur **Basic Grooming**</li>
+                    <li><i data-lucide="check" class="check-icon"></i> Mandi shampoo obat sulfur/anti-kutu</li>
+                    <li><i data-lucide="check" class="check-icon"></i> Treatment pencegahan jamur kulit</li>
+                    <li><i data-lucide="check" class="check-icon"></i> Sisir blow anti-runtuh</li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <a href="https://wa.me/6281388881316?text=Halo%20PetLoft%2C%20saya%20ingin%20pesan%20paket%20Grooming%20Sehat" target="_blank" class="btn btn-primary">Booking Sekarang</a>
+                </div>
+              </div>
+              
+              <!-- Card 3 -->
+              <div class="price-card">
+                <div class="card-header">
+                  <span class="package-name">Styling & Cut Grooming</span>
+                  <div class="price-wrapper">
+                    <span class="currency">Rp</span>
+                    <span class="price-amount">120k</span>
+                    <span class="price-period">/sesi</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="package-desc">Styling bulu estetik dari groomer profesional kami agar hewan tampil cantik & menggemaskan.</p>
+                  <ul class="package-features">
+                    <li><i data-lucide="check" class="check-icon"></i> Semua fitur **Basic Grooming**</li>
+                    <li><i data-lucide="check" class="check-icon"></i> Potong/pangkas bulu estetik (Teddy Bear, Lion Cut, dll)</li>
+                    <li><i data-lucide="check" class="check-icon"></i> Treatment creambath vitamin bulu</li>
+                    <li><i data-lucide="check" class="check-icon"></i> Parfum premium tahan lama</li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <a href="https://wa.me/6281388881316?text=Halo%20PetLoft%2C%20saya%20ingin%20pesan%20paket%20Styling%20Grooming" target="_blank" class="btn btn-outline">Booking Sekarang</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Tab Content: Klinik (Hidden by default) -->
+          <div class="tab-content" id="klinik-content">
+            <div class="price-grid">
+              <!-- Card 1 -->
+              <div class="price-card">
+                <div class="card-header">
+                  <span class="package-name">Konsultasi Medis</span>
+                  <div class="price-wrapper">
+                    <span class="currency">Rp</span>
+                    <span class="price-amount">50k</span>
+                    <span class="price-period">/visit</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="package-desc">Pemeriksaan tanda vital, konsultasi keluhan penyakit, dan resep obat oleh dokter hewan berlisensi.</p>
+                  <ul class="package-features">
+                    <li><i data-lucide="check" class="check-icon"></i> Cek suhu & berat badan</li>
+                    <li><i data-lucide="check" class="check-icon"></i> Konsultasi gejala & pola makan</li>
+                    <li><i data-lucide="check" class="check-icon"></i> Cek fisik mata, telinga, & mulut</li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <a href="https://wa.me/6281388881316?text=Halo%20PetLoft%2C%20saya%20ingin%20booking%20Konsultasi%20Dokter%20Hewan" target="_blank" class="btn btn-outline">Booking Sekarang</a>
+                </div>
+              </div>
+              
+              <!-- Card 2 -->
+              <div class="price-card popular">
+                <div class="popular-badge"><i data-lucide="heart" class="badge-icon"></i> Imunisasi</div>
+                <div class="card-header">
+                  <span class="package-name">Vaksinasi Rutin</span>
+                  <div class="price-wrapper">
+                    <span class="currency">Rp</span>
+                    <span class="price-amount">150k</span>
+                    <span class="price-period">/suntik</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="package-desc">Pemberian vaksin untuk meningkatkan antibodi dari penyakit menular fatal (Feline/Canine virus & Rabies).</p>
+                  <ul class="package-features">
+                    <li><i data-lucide="check" class="check-icon"></i> Cek kondisi fisik pra-vaksin</li>
+                    <li><i data-lucide="check" class="check-icon"></i> Buku vaksinasi resmi</li>
+                    <li><i data-lucide="check" class="check-icon"></i> Suntik Vaksin (Tricat/Tetracat/Rabies)</li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <a href="https://wa.me/6281388881316?text=Halo%20PetLoft%2C%20saya%20ingin%20booking%20Vaksinasi%20Hewan" target="_blank" class="btn btn-primary">Booking Sekarang</a>
+                </div>
+              </div>
+              
+              <!-- Card 3 -->
+              <div class="price-card">
+                <div class="card-header">
+                  <span class="package-name">Rawat Jalan & Tindakan Ringan</span>
+                  <div class="price-wrapper">
+                    <span class="currency">Hubungi</span>
+                    <span class="price-amount">Admin</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="package-desc">Penanganan penyakit parasit kulit, pemberian obat cacing, tetes telinga infeksi, atau suntikan antibiotik.</p>
+                  <ul class="package-features">
+                    <li><i data-lucide="check" class="check-icon"></i> Treatment luka luar & perban</li>
+                    <li><i data-lucide="check" class="check-icon"></i> Suntik kutu/scabies efektif</li>
+                    <li><i data-lucide="check" class="check-icon"></i> Nebulizer pernapasan hewan</li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <a href="https://wa.me/6281388881316?text=Halo%20PetLoft%2C%20saya%20ingin%20tanya%20tarif%20tindakan%20medis%20ringan" target="_blank" class="btn btn-outline">Tanya Admin WA</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Pet Hotel -->
+      <section class="hotel" id="hotel">
+        <div class="container hotel-container">
+          <div class="hotel-visual">
+            <div class="hotel-gallery">
+              <!-- Visual representation of cozy pet hotel rooms -->
+              <div class="hotel-room-illustration">
+                <img src="/src/assets/hotel_ig.webp" alt="PetLoft Pet Hotel Room" class="hotel-img-real" onerror="this.style.display='none'; document.getElementById('hotel-svg-fallback').style.display='block';" />
+                <svg id="hotel-svg-fallback" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" class="hotel-svg" style="display: none;">
+                  <!-- Cozy room base -->
+                  <rect width="400" height="300" rx="16" fill="var(--color-bg)" />
+                  <rect x="20" y="20" width="360" height="260" rx="12" fill="var(--color-bg-card)" />
+                  
+                  <!-- Window and Sun light -->
+                  <rect x="60" y="40" width="80" height="100" rx="6" fill="#E8EEEC" />
+                  <path d="M60 90H140M100 40V140" stroke="var(--color-bg)" stroke-width="3" />
+                  
+                  <!-- Soft Pet Bed -->
+                  <ellipse cx="280" cy="220" rx="60" ry="25" fill="var(--color-primary)" fill-opacity="0.2" />
+                  <ellipse cx="280" cy="220" rx="50" ry="20" fill="var(--color-primary)" />
+                  
+                  <!-- Cute Sleeping Cat -->
+                  <circle cx="280" cy="210" r="15" fill="var(--color-bg)" />
+                  <path d="M265 210L260 195L272 205H288L300 195L295 210H265Z" fill="var(--color-bg)" />
+                  <ellipse cx="280" cy="225" rx="20" ry="10" fill="var(--color-bg)" />
+                  <path d="M295 225C305 225 310 215 310 205" stroke="var(--color-bg)" stroke-width="3" stroke-linecap="round" />
+                  
+                  <!-- Food Bowl -->
+                  <ellipse cx="140" cy="240" rx="20" ry="10" fill="var(--color-secondary)" />
+                  <ellipse cx="140" cy="235" rx="18" ry="6" fill="#F4C45E" />
+                </svg>
+              </div>
+              <div class="room-stats">
+                <div class="stat-card">
+                  <strong class="stat-number">24/7</strong>
+                  <span class="stat-label">CCTV & Pengawasan</span>
+                </div>
+                <div class="stat-card">
+                  <strong class="stat-number">24°C</strong>
+                  <span class="stat-label">Suhu Kamar AC Stabil</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="hotel-content">
+            <span class="subtitle">Penitipan Hewan Premium</span>
+            <h2 class="section-title">Pet Hotel Bintang 5 untuk Kucing & Anjing</h2>
+            <p class="section-description">
+              Tinggalkan hewan peliharaan Anda dengan tenang saat Anda bepergian. Pet Hotel kami didesain higienis, bebas stress, dan terpantau sepanjang waktu.
+            </p>
+            
+            <div class="hotel-checklist">
+              <div class="checklist-item">
+                <span class="check-box"><i data-lucide="check"></i></span>
+                <div class="checklist-desc">
+                  <strong>Ruangan Full AC & Bebas Pengap</strong>
+                  <p>Kamar dibersihkan dua kali sehari menggunakan disinfektan ramah hewan.</p>
+                </div>
+              </div>
+              
+              <div class="checklist-item">
+                <span class="check-box"><i data-lucide="check"></i></span>
+                <div class="checklist-desc">
+                  <strong>Laporan Video WA Harian</strong>
+                  <p>Admin kami akan mengirimkan video aktivitas & makan hewan kesayangan Anda setiap pagi dan sore.</p>
+                </div>
+              </div>
+              
+              <div class="checklist-item">
+                <span class="check-box"><i data-lucide="check"></i></span>
+                <div class="checklist-desc">
+                  <strong>Sesi Bermain & Olahraga</strong>
+                  <p>Hewan peliharaan dilepaskan di area playground tertutup untuk bermain agar tidak stress di kandang.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="hotel-cta-box">
+              <div class="hotel-pricing-brief">
+                <span class="pricing-label">Mulai Dari</span>
+                <strong class="pricing-val">Rp 50.000 <span>/hari</span></strong>
+              </div>
+              <a href="https://wa.me/6281388881316?text=Halo%20PetLoft%2C%20saya%20ingin%20tanya%20booking%20kamar%20Pet%20Hotel" target="_blank" class="btn btn-primary btn-lg">Pesan Kamar Hotel</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Toko / Shop Highlights -->
+      <section class="toko" id="toko">
+        <div class="container">
+          <div class="section-header">
+            <span class="subtitle">Katalog Produk Pilihan</span>
+            <h2 class="section-title">Belanja Praktis di PetLoft Store</h2>
+            <p class="section-description">
+              Dapatkan makanan bernutrisi tinggi, pasir berkualitas, dan aksesoris terbaik untuk mendukung kesehatan peliharaan Anda. Bisa dipesan lewat WhatsApp atau Shopee Official PetLoft Bekasi.
+            </p>
+          </div>
+          
+          <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+              <div class="product-badge">Top Seller</div>
+              <div class="product-visual">
+                <img src="/src/assets/prod_royal_canin.webp" alt="Royal Canin Kitten" class="product-img-real" onerror="this.style.display='none'; document.getElementById('prod-rc-fallback').style.display='block';" />
+                <div class="product-svg-wrapper" id="prod-rc-fallback" style="display: none;">
+                  <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="prod-svg">
+                    <rect x="60" y="40" width="80" height="120" rx="10" fill="#E28743" />
+                    <rect x="70" y="70" width="60" height="50" rx="4" fill="#FFFFFF" />
+                    <circle cx="100" cy="95" r="8" fill="#D97736" />
+                    <circle cx="90" cy="85" r="4" fill="#D97736" />
+                    <circle cx="100" cy="80" r="4" fill="#D97736" />
+                    <circle cx="110" cy="85" r="4" fill="#D97736" />
+                  </svg>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Makanan Kucing</span>
+                <h3 class="product-title">Royal Canin Kitten (Dry Food - 400g)</h3>
+                <div class="product-meta">
+                  <span class="product-price">Rp 68.000</span>
+                  <span class="product-rating"><i data-lucide="star" class="star-icon"></i> 4.9</span>
+                </div>
+                <div class="product-actions">
+                  <a href="https://id.shp.ee/xCLsRjJ" target="_blank" class="btn btn-outline btn-sm btn-shopee">
+                    <svg viewBox="0 0 24 24" class="brand-icon-svg" style="fill: currentColor; margin-right: 6px; width: 14px; height: 14px;"><path d="M19.2 7h-2.1c-.6-3-2.9-5.2-5.1-5.2S7.5 4 6.9 7H4.8C3.8 7 3 7.8 3 8.8L2 20c0 1 .8 1.8 1.8 1.8h16.4c1 0 1.8-.8 1.8-1.8l-1-11.2c0-1-.8-1.8-1.8-1.8zm-7.2-3.7c1.3 0 2.6 1.6 3 3.7H9c.4-2.1 1.7-3.7 3-3.7zm1.8 9.3c-1 .4-1.6.7-1.6 1.2 0 .5.5.7 1.1.7.9 0 1.7-.5 1.7-1.2 0-.9-.6-1.1-1.6-1.5-1.2-.4-2-.9-2-2 0-1.1 1-1.9 2.2-1.9 1 0 1.8.4 2 .9-.1.1-.2.3-.2.5-.2-.4-.8-.7-1.4-.7-.9 0-1.4.5-1.4 1 0 .5.4.7 1.3 1 1.2.4 2.1 1 2.1 2.1-.1 1.2-1.1 1.9-2.2 1.9-1.2 0-2.1-.5-2.3-1.2.1-.1.2-.3.3-.4.2.4.9.8 1.6.8.9 0 1.4-.4 1.4-.9 0-.5-.5-.7-1.3-1z"/></svg> Shopee
+                  </a>
+                  <a href="https://wa.me/6281388881316?text=Halo%20PetLoft%2C%20saya%20ingin%20beli%20Royal%20Canin%20Kitten%20400g" target="_blank" class="btn btn-primary btn-sm">
+                    Beli di WA
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+              <div class="product-visual">
+                <img src="/src/assets/prod_whiskas.webp" alt="Whiskas Pouch Adult Tuna" class="product-img-real" onerror="this.style.display='none'; document.getElementById('prod-whiskas-fallback').style.display='block';" />
+                <div class="product-svg-wrapper" id="prod-whiskas-fallback" style="display: none;">
+                  <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="prod-svg">
+                    <rect x="65" y="50" width="70" height="100" rx="8" fill="#4A8F82" />
+                    <rect x="75" y="80" width="50" height="40" rx="4" fill="#FFFFFF" />
+                    <path d="M85 100C85 95 105 95 110 100C110 105 85 105 85 100Z" fill="#4A8F82" />
+                    <polygon points="110,100 115,95 115,105" fill="#4A8F82" />
+                  </svg>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Makanan Basah</span>
+                <h3 class="product-title">Whiskas Wet Pouch Adult Tuna (85g)</h3>
+                <div class="product-meta">
+                  <span class="product-price">Rp 8.500</span>
+                  <span class="product-rating"><i data-lucide="star" class="star-icon"></i> 4.9</span>
+                </div>
+                <div class="product-actions">
+                  <a href="https://id.shp.ee/xCLsRjJ" target="_blank" class="btn btn-outline btn-sm btn-shopee">
+                    <svg viewBox="0 0 24 24" class="brand-icon-svg" style="fill: currentColor; margin-right: 6px; width: 14px; height: 14px;"><path d="M19.2 7h-2.1c-.6-3-2.9-5.2-5.1-5.2S7.5 4 6.9 7H4.8C3.8 7 3 7.8 3 8.8L2 20c0 1 .8 1.8 1.8 1.8h16.4c1 0 1.8-.8 1.8-1.8l-1-11.2c0-1-.8-1.8-1.8-1.8zm-7.2-3.7c1.3 0 2.6 1.6 3 3.7H9c.4-2.1 1.7-3.7 3-3.7zm1.8 9.3c-1 .4-1.6.7-1.6 1.2 0 .5.5.7 1.1.7.9 0 1.7-.5 1.7-1.2 0-.9-.6-1.1-1.6-1.5-1.2-.4-2-.9-2-2 0-1.1 1-1.9 2.2-1.9 1 0 1.8.4 2 .9-.1.1-.2.3-.2.5-.2-.4-.8-.7-1.4-.7-.9 0-1.4.5-1.4 1 0 .5.4.7 1.3 1 1.2.4 2.1 1 2.1 2.1-.1 1.2-1.1 1.9-2.2 1.9-1.2 0-2.1-.5-2.3-1.2.1-.1.2-.3.3-.4.2.4.9.8 1.6.8.9 0 1.4-.4 1.4-.9 0-.5-.5-.7-1.3-1z"/></svg> Shopee
+                  </a>
+                  <a href="https://wa.me/6281388881316?text=Halo%20PetLoft%2C%20saya%20ingin%20beli%20Whiskas%20Wet%20Pouch" target="_blank" class="btn btn-primary btn-sm">
+                    Beli di WA
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+              <div class="product-visual">
+                <img src="/src/assets/prod_pasir.webp" alt="Pasir Kucing Gumpal Wangi Bentonite" class="product-img-real" onerror="this.style.display='none'; document.getElementById('prod-pasir-fallback').style.display='block';" />
+                <div class="product-svg-wrapper" id="prod-pasir-fallback" style="display: none;">
+                  <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="prod-svg">
+                    <path d="M50 150L60 60H140L150 150H50Z" fill="#F4C45E" />
+                    <rect x="70" y="80" width="60" height="40" rx="4" fill="#FFFFFF" />
+                    <circle cx="100" cy="100" r="8" fill="#FAF6F0" />
+                  </svg>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Kebersihan</span>
+                <h3 class="product-title">Pasir Kucing Gumpal Wangi Bentonite (10L)</h3>
+                <div class="product-meta">
+                  <span class="product-price">Rp 55.000</span>
+                  <span class="product-rating"><i data-lucide="star" class="star-icon"></i> 4.8</span>
+                </div>
+                <div class="product-actions">
+                  <a href="https://id.shp.ee/xCLsRjJ" target="_blank" class="btn btn-outline btn-sm btn-shopee">
+                    <svg viewBox="0 0 24 24" class="brand-icon-svg" style="fill: currentColor; margin-right: 6px; width: 14px; height: 14px;"><path d="M19.2 7h-2.1c-.6-3-2.9-5.2-5.1-5.2S7.5 4 6.9 7H4.8C3.8 7 3 7.8 3 8.8L2 20c0 1 .8 1.8 1.8 1.8h16.4c1 0 1.8-.8 1.8-1.8l-1-11.2c0-1-.8-1.8-1.8-1.8zm-7.2-3.7c1.3 0 2.6 1.6 3 3.7H9c.4-2.1 1.7-3.7 3-3.7zm1.8 9.3c-1 .4-1.6.7-1.6 1.2 0 .5.5.7 1.1.7.9 0 1.7-.5 1.7-1.2 0-.9-.6-1.1-1.6-1.5-1.2-.4-2-.9-2-2 0-1.1 1-1.9 2.2-1.9 1 0 1.8.4 2 .9-.1.1-.2.3-.2.5-.2-.4-.8-.7-1.4-.7-.9 0-1.4.5-1.4 1 0 .5.4.7 1.3 1 1.2.4 2.1 1 2.1 2.1-.1 1.2-1.1 1.9-2.2 1.9-1.2 0-2.1-.5-2.3-1.2.1-.1.2-.3.3-.4.2.4.9.8 1.6.8.9 0 1.4-.4 1.4-.9 0-.5-.5-.7-1.3-1z"/></svg> Shopee
+                  </a>
+                  <a href="https://wa.me/6281388881316?text=Halo%20PetLoft%2C%20saya%20ingin%20beli%20Pasir%20Gumpal%20Wangi%2010L" target="_blank" class="btn btn-primary btn-sm">
+                    Beli di WA
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+              <div class="product-visual">
+                <img src="/src/assets/prod_kalung.webp" alt="Kalung Kucing/Anjing Anti-Kutu" class="product-img-real" onerror="this.style.display='none'; document.getElementById('prod-kalung-fallback').style.display='block';" />
+                <div class="product-svg-wrapper" id="prod-kalung-fallback" style="display: none;">
+                  <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="prod-svg">
+                    <circle cx="100" cy="100" r="50" stroke="#1A2328" stroke-width="12" />
+                    <circle cx="100" cy="150" r="14" fill="#F4C45E" />
+                    <circle cx="100" cy="150" r="6" fill="#1A2328" />
+                  </svg>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Aksesoris</span>
+                <h3 class="product-title">Kalung Kucing/Anjing Anti-Kutu & Lonceng</h3>
+                <div class="product-meta">
+                  <span class="product-price">Rp 12.000</span>
+                  <span class="product-rating"><i data-lucide="star" class="star-icon"></i> 4.7</span>
+                </div>
+                <div class="product-actions">
+                  <a href="https://id.shp.ee/xCLsRjJ" target="_blank" class="btn btn-outline btn-sm btn-shopee">
+                    <svg viewBox="0 0 24 24" class="brand-icon-svg" style="fill: currentColor; margin-right: 6px; width: 14px; height: 14px;"><path d="M19.2 7h-2.1c-.6-3-2.9-5.2-5.1-5.2S7.5 4 6.9 7H4.8C3.8 7 3 7.8 3 8.8L2 20c0 1 .8 1.8 1.8 1.8h16.4c1 0 1.8-.8 1.8-1.8l-1-11.2c0-1-.8-1.8-1.8-1.8zm-7.2-3.7c1.3 0 2.6 1.6 3 3.7H9c.4-2.1 1.7-3.7 3-3.7zm1.8 9.3c-1 .4-1.6.7-1.6 1.2 0 .5.5.7 1.1.7.9 0 1.7-.5 1.7-1.2 0-.9-.6-1.1-1.6-1.5-1.2-.4-2-.9-2-2 0-1.1 1-1.9 2.2-1.9 1 0 1.8.4 2 .9-.1.1-.2.3-.2.5-.2-.4-.8-.7-1.4-.7-.9 0-1.4.5-1.4 1 0 .5.4.7 1.3 1 1.2.4 2.1 1 2.1 2.1-.1 1.2-1.1 1.9-2.2 1.9-1.2 0-2.1-.5-2.3-1.2.1-.1.2-.3.3-.4.2.4.9.8 1.6.8.9 0 1.4-.4 1.4-.9 0-.5-.5-.7-1.3-1z"/></svg> Shopee
+                  </a>
+                  <a href="https://wa.me/6281388881316?text=Halo%20PetLoft%2C%20saya%20ingin%20beli%20Kalung%20Anti%20Kutu" target="_blank" class="btn btn-primary btn-sm">
+                    Beli di WA
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="toko-footer">
+            <p>Butuh perlengkapan atau pakan jenis lain? Kami menyediakan puluhan brand ternama lainnya.</p>
+            <a href="https://id.shp.ee/xCLsRjJ" target="_blank" class="btn btn-secondary btn-lg">
+              <svg viewBox="0 0 24 24" class="brand-icon-svg" style="fill: currentColor; margin-right: 8px; width: 18px; height: 18px;"><path d="M19.2 7h-2.1c-.6-3-2.9-5.2-5.1-5.2S7.5 4 6.9 7H4.8C3.8 7 3 7.8 3 8.8L2 20c0 1 .8 1.8 1.8 1.8h16.4c1 0 1.8-.8 1.8-1.8l-1-11.2c0-1-.8-1.8-1.8-1.8zm-7.2-3.7c1.3 0 2.6 1.6 3 3.7H9c.4-2.1 1.7-3.7 3-3.7zm1.8 9.3c-1 .4-1.6.7-1.6 1.2 0 .5.5.7 1.1.7.9 0 1.7-.5 1.7-1.2 0-.9-.6-1.1-1.6-1.5-1.2-.4-2-.9-2-2 0-1.1 1-1.9 2.2-1.9 1 0 1.8.4 2 .9-.1.1-.2.3-.2.5-.2-.4-.8-.7-1.4-.7-.9 0-1.4.5-1.4 1 0 .5.4.7 1.3 1 1.2.4 2.1 1 2.1 2.1-.1 1.2-1.1 1.9-2.2 1.9-1.2 0-2.1-.5-2.3-1.2.1-.1.2-.3.3-.4.2.4.9.8 1.6.8.9 0 1.4-.4 1.4-.9 0-.5-.5-.7-1.3-1z"/></svg> Kunjungi Shopee Official Store
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Testimoni -->
+      <section class="testimoni" id="testimoni">
+        <div class="container">
+          <div class="section-header">
+            <span class="subtitle">Review Pelanggan</span>
+            <h2 class="section-title">Apa Kata Pemilik Hewan di Summarecon?</h2>
+            <p class="section-description">
+              Ulasan asli dari para pelanggan setia kami yang mempercayakan kebutuhan anjing dan kucing kesayangan mereka di PetLoft.
+            </p>
+          </div>
+          
+          <div class="testimonial-slider-container">
+            <div class="testimonial-slider" id="testimonialSlider">
+              <!-- Slide 1 -->
+              <div class="testimonial-card active">
+                <div class="testimonial-rating">
+                  <i data-lucide="star" class="star-fill"></i>
+                  <i data-lucide="star" class="star-fill"></i>
+                  <i data-lucide="star" class="star-fill"></i>
+                  <i data-lucide="star" class="star-fill"></i>
+                  <i data-lucide="star" class="star-fill"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Sangat puas grooming kucing Persia saya di sini. Bulunya jadi halus wangi banget, penanganan mandinya lembut jadi kucing saya gak stress. Kamar hotelnya juga bersih banget ada AC nya. Recomended petshop di sekitar Summarecon!"
+                </p>
+                <div class="testimonial-user">
+                  <div class="user-avatar-placeholder"><i data-lucide="user"></i></div>
+                  <div class="user-info">
+                    <strong class="user-name">Amanda Rizky</strong>
+                    <span class="user-status">Warga Cluster Burgundy</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="testimonial-card">
+                <div class="testimonial-rating">
+                  <i data-lucide="star" class="star-fill"></i>
+                  <i data-lucide="star" class="star-fill"></i>
+                  <i data-lucide="star" class="star-fill"></i>
+                  <i data-lucide="star" class="star-fill"></i>
+                  <i data-lucide="star" class="star-fill"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Pet Hotel terpercaya! Tiap mudik selalu titip anjing Shih Tzu saya di PetLoft. Suka banget karena dikirimin laporan video tiap pagi sama sore, jadi tenang pas lagi di luar kota. Kamarnya bersih, anjing saya juga diajak main di playground."
+                </p>
+                <div class="testimonial-user">
+                  <div class="user-avatar-placeholder"><i data-lucide="user"></i></div>
+                  <div class="user-info">
+                    <strong class="user-name">Budi Santoso</strong>
+                    <span class="user-status">Warga Cluster Olive</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="testimonial-card">
+                <div class="testimonial-rating">
+                  <i data-lucide="star" class="star-fill"></i>
+                  <i data-lucide="star" class="star-fill"></i>
+                  <i data-lucide="star" class="star-fill"></i>
+                  <i data-lucide="star" class="star-fill"></i>
+                  <i data-lucide="star" class="star-fill"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Pernah bawa anjing saya konsultasi gatal kulit ke klinik dokternya. Penjelasannya detail, dikasih resep salep dan shampoo obat sulfur. Dalam 1 minggu gatal & jamurnya langsung rontok bersih. Pelayanan top banget dan ramah!"
+                </p>
+                <div class="testimonial-user">
+                  <div class="user-avatar-placeholder"><i data-lucide="user"></i></div>
+                  <div class="user-info">
+                    <strong class="user-name">Clara Angelica</strong>
+                    <span class="user-status">Warga Cluster Burgundy</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="slider-controls">
+              <button class="slider-btn" id="prevTesti" aria-label="Slide Sebelumnya">
+                <i data-lucide="chevron-left"></i>
+              </button>
+              <div class="slider-dots" id="sliderDots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <button class="slider-btn" id="nextTesti" aria-label="Slide Selanjutnya">
+                <i data-lucide="chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Instagram Gallery -->
+      <section class="instagram-feed" id="instagram-gallery">
+        <div class="container">
+          <div class="section-header">
+            <span class="subtitle">Galeri Instagram</span>
+            <h2 class="section-title">Ikuti Aktivitas Harian Kami di Instagram</h2>
+            <p class="section-description">
+              Pantau postingan terbaru, tips kesehatan hewan peliharaan, dan promo bulanan kami langsung dari feed <a href="https://www.instagram.com/petloft_official/" target="_blank" class="brand-link">@petloft_official</a>.
+            </p>
+          </div>
+          
+          <div class="instagram-grid">
+            <!-- Feed Item 1 (Tahun Baru Islam) -->
+            <div class="instagram-card">
+              <a href="https://www.instagram.com/petloft_official/" target="_blank" class="instagram-link">
+                <div class="instagram-image-wrapper">
+                  <img src="/src/assets/instagram_post1.webp" alt="PetLoft Instagram Post 1" class="instagram-img" onerror="this.src='/src/assets/hero.webp'; this.classList.add('placeholder-style');" />
+                  <div class="instagram-overlay">
+                    <svg viewBox="0 0 24 24" class="brand-icon-svg instagram-overlay-icon" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px; color: var(--color-secondary);"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    <span>Lihat di IG</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Feed Item 2 (Lucky Wheel Promo) -->
+            <div class="instagram-card">
+              <a href="https://www.instagram.com/petloft_official/" target="_blank" class="instagram-link">
+                <div class="instagram-image-wrapper">
+                  <img src="/src/assets/instagram_post2.webp" alt="PetLoft Instagram Post 2" class="instagram-img" onerror="this.src='/src/assets/hero.webp'; this.classList.add('placeholder-style');" />
+                  <div class="instagram-overlay">
+                    <svg viewBox="0 0 24 24" class="brand-icon-svg instagram-overlay-icon" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px; color: var(--color-secondary);"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    <span>Lihat di IG</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Feed Item 3 (Grooming / Counter) -->
+            <div class="instagram-card">
+              <a href="https://www.instagram.com/petloft_official/" target="_blank" class="instagram-link">
+                <div class="instagram-image-wrapper">
+                  <img src="/src/assets/instagram_post3.webp" alt="PetLoft Instagram Post 3" class="instagram-img" onerror="this.src='/src/assets/hero.webp'; this.classList.add('placeholder-style');" />
+                  <div class="instagram-overlay">
+                    <svg viewBox="0 0 24 24" class="brand-icon-svg instagram-overlay-icon" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px; color: var(--color-secondary);"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    <span>Lihat di IG</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Feed Item 4 (Additional Post) -->
+            <div class="instagram-card">
+              <a href="https://www.instagram.com/petloft_official/" target="_blank" class="instagram-link">
+                <div class="instagram-image-wrapper">
+                  <img src="/src/assets/instagram_post4.webp" alt="PetLoft Instagram Post 4" class="instagram-img" onerror="this.src='/src/assets/hero.webp'; this.classList.add('placeholder-style');" />
+                  <div class="instagram-overlay">
+                    <svg viewBox="0 0 24 24" class="brand-icon-svg instagram-overlay-icon" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px; color: var(--color-secondary);"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    <span>Lihat di IG</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section FAQ -->
+      <section class="faq" id="faq">
+        <div class="container">
+          <div class="section-header">
+            <span class="subtitle">FAQ (Tanya Jawab)</span>
+            <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+            <p class="section-description">
+              Temukan jawaban cepat seputar layanan grooming, pet hotel, klinik VetLoft, dan pemesanan produk kami.
+            </p>
+          </div>
+          
+          <div class="faq-grid">
+            <details class="faq-item">
+              <summary class="faq-question">
+                Apakah hewan peliharaan wajib divaksinasi sebelum menginap di Pet Hotel?
+              </summary>
+              <div class="faq-answer">
+                <p>Ya, demi kesehatan dan keselamatan bersama, semua anjing dan kucing yang menginap di Pet Hotel wajib memiliki riwayat vaksinasi lengkap (minimal vaksin inti tahunan) yang tercatat di buku vaksin resmi, serta wajib bebas dari kutu dan jamur.</p>
+              </div>
+            </details>
+            
+            <details class="faq-item">
+              <summary class="faq-question">
+                Berapa kali sebaiknya hewan peliharaan melakukan grooming?
+              </summary>
+              <div class="faq-answer">
+                <p>Untuk menjaga kebersihan kulit, keindahan bulu, dan mencegah kerontokan parah, kami menyarankan grooming rutin setiap <strong>2 hingga 4 minggu sekali</strong>. Pemotongan kuku dan pembersihan telinga juga ideal dilakukan dalam rentang waktu ini.</p>
+              </div>
+            </details>
+            
+            <details class="faq-item">
+              <summary class="faq-question">
+                Apakah VetLoft Clinic melayani pemeriksaan darurat?
+              </summary>
+              <div class="faq-answer">
+                <p>VetLoft Clinic beroperasi setiap hari dari pukul 08:00 hingga 20:00 WIB. Untuk penanganan medis darurat selama jam operasional, Anda bisa langsung membawa hewan Anda ke klinik. Kami menyarankan untuk menghubungi WhatsApp darurat kami di jalan agar dokter kami dapat bersiap.</p>
+              </div>
+            </details>
+            
+            <details class="faq-item">
+              <summary class="faq-question">
+                Apakah ada fasilitas antar-jemput hewan?
+              </summary>
+              <div class="faq-answer">
+                <p>Ya, kami menyediakan layanan antar-jemput ber-AC khusus untuk area Bekasi Utara dan sekitarnya (Summarecon Bekasi, Harapan Indah, dll.) untuk mempermudah Anda melakukan grooming atau penitipan hewan. Silakan reservasi slot antar-jemput melalui WhatsApp admin minimal 1 hari sebelumnya.</p>
+              </div>
+            </details>
+            
+            <details class="faq-item">
+              <summary class="faq-question">
+                Bagaimana cara memesan pakan dan aksesoris secara online?
+              </summary>
+              <div class="faq-answer">
+                <p>Anda dapat berbelanja langsung secara online melalui <strong>Shopee Official Store</strong> kami yang terintegrasi di web ini, atau memesan via WhatsApp admin untuk opsi pengiriman kurir instan langsung di hari yang sama.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Kontak & Peta -->
+      <section class="kontak" id="kontak">
+        <div class="container kontak-container">
+          <div class="kontak-info">
+            <span class="subtitle">Kontak & Lokasi</span>
+            <h2 class="section-title">Kunjungi Workshop Kami di Summarecon</h2>
+            <p class="section-description">
+              Jangan ragu untuk berkunjung langsung atau berkonsultasi mengenai kebutuhan grooming & kesehatan hewan kesayangan Anda.
+            </p>
+            
+            <div class="info-list">
+              <div class="info-item">
+                <span class="info-icon"><i data-lucide="map-pin"></i></span>
+                <div class="info-details">
+                  <strong>Alamat Workshop</strong>
+                  <p>Ruko Burgundy Blok RAL 25, Summarecon Bekasi, Harapan Baru, Kec. Bekasi Utara, Kota Bekasi, Jawa Barat 17123</p>
+                </div>
+              </div>
+              
+              <div class="info-item">
+                <span class="info-icon"><i data-lucide="clock"></i></span>
+                <div class="info-details">
+                  <strong>Jam Operasional</strong>
+                  <p>Senin – Minggu: 08:00 – 20:00 WIB</p>
+                </div>
+              </div>
+              
+              <div class="info-item">
+                <span class="info-icon"><i data-lucide="phone"></i></span>
+                <div class="info-details">
+                  <strong>Telepon / WhatsApp</strong>
+                  <p>+62 813-8888-1316</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="kontak-socials">
+              <a href="https://www.instagram.com/petloft_official/" target="_blank" class="social-link" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" class="brand-icon-svg" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="https://linktr.ee/Petloftofficial" target="_blank" class="social-link" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" class="brand-icon-svg" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="https://wa.me/6281388881316?text=Halo%20PetLoft%2C%20saya%20ingin%20tanya%20info" target="_blank" class="social-link" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" class="brand-icon-svg" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.008c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </a>
+            </div>
+          </div>
+          
+          <div class="kontak-maps">
+            <div class="maps-wrapper">
+              <iframe src="https://maps.google.com/maps?q=-6.2215854060046265,107.01373963996512&z=17&output=embed" width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="/src/assets/logo_ig.webp" alt="PetLoft Logo" class="logo-img" />
+            <span class="logo-text">PET<span class="logo-highlight">LOFT</span></span>
+          </a>
+          <p class="footer-desc">
+            Penyedia jasa perawatan hewan peliharaan premium terpercaya di Bekasi Utara. Kami mengutamakan kenyamanan, kebersihan, dan keselamatan hewan kesayangan Anda.
+          </p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/petloft_official/" target="_blank" class="footer-social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" class="brand-icon-svg" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://linktr.ee/Petloftofficial" target="_blank" class="footer-social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" class="brand-icon-svg" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://wa.me/6281388881316?text=Halo%20PetLoft%2C%20saya%20ingin%20tanya%20info" target="_blank" class="footer-social-link" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" class="brand-icon-svg" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.008c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <strong>Navigasi</strong>
+          <a href="#layanan">Grooming & Vet</a>
+          <a href="#hotel">Pet Hotel</a>
+          <a href="#toko">Store Catalog</a>
+          <a href="#faq">FAQ</a>
+          <a href="#instagram-gallery">Galeri</a>
+          <a href="#testimoni">Testimoni</a>
+        </div>
+        
+        <div class="footer-links">
+          <strong>Layanan Kami</strong>
+          <a href="#layanan">Basic Grooming</a>
+          <a href="#layanan">Grooming Kutu & Jamur</a>
+          <a href="#layanan">Styling Cut</a>
+          <a href="#layanan">Vaksinasi & VetLoft Clinic</a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="container footer-bottom-container">
+          <p class="copyright">&copy; 2026 PetLoft Summarecon Bekasi. All Rights Reserved.</p>
+          <p class="developer">Design by Freelancer Bekasi</p>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Main JavaScript Module -->
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
